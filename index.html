@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <nav>
+          <img src="/img/img.png" alt="image" />
+          <h5>Ali</h5>
+        </nav>
+      </header>
+      <div class="main-box">
+        <div class="box">
+          <h5>Task Completed</h5>
+          <h4 id="task-count"></h4>
+        </div>
+        <div class="box">
+          <h5>Latest Created Tasks</h5>
+          <ul id="latest-tasks"></ul>
+        </div>
+        <div class="box">
+          <h3>
+            Completed <br />
+            Tasks
+          </h3>
+          <div class="chart"></div>
+        </div>
+      </div>
+      <div class="task">
+        <div class="child">
+          <h6>Tasks</h6>
+          <div class="inner-child">
+            <div class="new-task-input">
+              <i class="fas fa-search"></i>
+              <input type="search" placeholder="Search by task name" id="search"/>
+            </div>
+            <button id="button"><i class="fas fa-plus"></i>New Tasks</button>
+          </div>
+        </div>
+      </div>
+      <div class="tasks-container">
+        <div class="tasks-container-wrapper">
+          <ol id="todoList"></ol>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="popup">
+      <div class="popup-content">
+        <p id="close"><i class="fas fa-times"></i></p>
+        <h5>+ New Task</h5>
+        <input type="text" placeholder="Task Name" id="todoInput" />
+        <button><i class="fas fa-plus"></i>New Tasks</button>
+      </div>
+    </div>
+
+    <div class="popup popup-edit">
+      <div class="popup-content popup-content-edit">
+        <p id="close"><i class="fas fa-times"></i></p>
+        <h5>Edit task</h5>
+        <input type="text" placeholder="Task Name" id="todoInput-edit" />
+        <button>Save</button>
+      </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
